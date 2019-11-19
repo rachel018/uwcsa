@@ -1,0 +1,225 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+/*GENERAL*/
+
+body {
+	background:##E5E5E5;
+	color: #3c393f; 
+}
+
+
+/*HEADER*/
+
+#header {
+	margin-left:80px;
+	margin-top:25px;
+	width:100%;
+}
+
+#header img {
+	width:100px;
+}
+
+.links {
+	position: absolute;
+	width: 578px;
+	height: 22px;
+	left: 65%;
+	top: 80px;
+	position:absolute;
+}
+
+.links a {
+	font-family: Open Sans;
+	text-decoration:none;
+	font-size: 16px;
+	line-height: 22px;
+	color: #3C393F;
+	margin-right:5%;
+}
+
+.links a:nth-child(6){
+	border-bottom: 3px solid #BC3456;
+	padding:5px;​ 
+}
+
+
+/*UPCOMING*/
+
+#entries {
+	position: absolute;
+	top: 195px;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 19px;
+	color: #3C393F;
+	padding-right:100px;
+	text-align:center;
+	left: 420px;
+	margin-bottom:100px;
+
+}
+
+#entries h1 {
+	font-family: PT Sans Narrow;
+	font-size: 16px;
+	font-weight:normal;
+	line-height: 19px;
+
+	color: #BB3556;	
+}
+
+#entries h2 {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 38px;
+
+	color: #3C393F;
+}
+
+
+/*NAVIGATION*/
+
+#navi {
+	position: absolute;
+	width: 55px;
+	height: 5px;
+	left: 693px;
+	margin-top: 750px;
+}
+
+#navi a{
+	color:#3C393F;
+	text-decoration:none;
+}
+
+#navi a:nth-child(6){
+	color: #BB3556
+}
+
+/*SOCIAL MEDIA BUTTONS*/
+
+#social {
+	position: absolute;
+	left: 663px;
+	top: 750px;
+}
+
+#social a {
+	width:18px;
+	height:18px;
+	background: #BB3556;
+	border-radius: 3px;
+	display:inline-block;
+	text-align:center;
+	text-decoration:none;
+	color:white;  
+	padding: 10px;
+	font-size:18px;
+	transition:0.5s;
+}
+
+#social a:hover {
+	background:#3c393f;
+	transition:0.5s;
+}
+
+#social img {
+	width:100%;
+}
+
+/*CONTACT*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	width: 150px;
+	margin-top:5px;
+	background: #BB3556;
+	border-radius: 15px;
+	border: none;
+
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 19px;
+	text-align:center;
+	padding: 5px;
+	margin-right:10px;
+	color: #FFFFFF;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+  background-color: white;
+  padding: 20px;
+	width: 610px;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html>
+<script src="https://kit.fontawesome.com/d9c4224b78.js" crossorigin="anonymous"></script>
+
+  <div id="header">
+<img src="https://i.imgur.com/BmTMqmZ.png">
+
+<div class="links">
+<a href="upcoming.html">Upcoming</a>
+<a href="about.html">About</a>
+<a href="events.html">Events</a>
+<a href="team.html">Team</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+
+  <div id="entries">
+<h1>CONTACT</h1>
+<h2>Get in touch!</h2>
+
+<p>Use this form to inquire about sponsorships, ask questions, or just say hi!</p>
+
+<div class="contact">
+<form action="mail.php" method="POST">
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email">
+<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+</form>
+</div></div>
+<div id="social"><a href="mailto:uwaterloocsa@gmail.com"><i class="far fa-envelope"></i></a>
+<a href="http://instagram.com/uwcsa"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/UWaterlooCSA/events/?ref=page_internal"><i class="fab fa-facebook-square"></i></a></div>
+<div id="navi">
+<a href="upcoming.html">•</a>
+<a href="about.html">•</a>
+<a href="events.html">•</a>
+<a href="team.html">•</a>
+<a href="sponsors.html">•</a>
+<a href="contact.html">•</a>
+</div>
+</html>
